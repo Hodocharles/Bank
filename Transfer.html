@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Dashboard.css">
+  <script src="Transfer.js"></script>
+<title> Transfer Money</title>
+
+
+  
+
+</head>
+
+<body style="background-color:#E2EFF7;">
+  
+  <form>
+    <fieldset>
+<legend>
+<h3>Transfer</h3> </legend>
+
+<!--intrabank-->
+<h2>Intrabank Transfer?</h2>
+
+<select id="test" name="form_select" onchange="showDiv(this)">
+  
+   <option value="0">No</option>
+   <option value="1">Yes</option>
+</select>
+<div id="hidden_div" style="display:none;">
+  <br>
+  <label for="Act_no">Reciepient Account Number</label><br>
+  <input type="text" name="Act_no" id="Act_no" placeholder="Account Number">
+  <br><br>
+  
+  <label for="Amount">Amount
+</label> <br>
+  <input type="text" name="Amount" id="Amount" placeholder="Amount">
+  <br><br>
+ <label for="Narr"> Narration
+</label><br>
+  <input type="text" name="Narr" id="Narr" placeholder="Narration">
+</div>
+
+<!--interbank-->
+<h2>Interbank Transfer?</h2>
+
+<select id="test" name="form_select" onchange="showEle(this)">
+  
+   <option value="0">No</option>
+   <option value="1">Yes</option>
+</select>
+<div id="hidden" style="display:none;">
+  <br>
+  <label for="Act_no">Reciepient Account Number</label><br>
+  <input type="text" name="Act_no" id="Act_no" placeholder="Account Number">
+  <br><br>
+  <label for="Bank">Bank</label><br>
+  <input list="Bank" placeholder="Select Bank">
+  <datalist name="Bank" id="Bank">
+    
+    <option>ABC Bank</option>
+    <option>Access Bank</option>
+    <option>Diamond Bank</option>
+    <option>Fidelity Bank</option>
+    <option>First Bank</option>
+    <option>First City Monument Bank</option>
+    <option>GTB</option>
+    <option>Heritage</option>
+    <option>Jaziz Bank</option>
+    <option>Keystone Bank</option>
+    <option>Kuda Bank</option>
+    <option></option>
+    <option>Monipoint Bank</option>
+    <option>Opay Bank</option>
+    <option>Palmpay </option>
+    <option>Polaris</option>
+    <option>Union Bank</option>
+    <option>Wema Bank</option>
+    <option>Zenith Bank</option>
+    
+  </datalist>
+  <br><br>
+  
+  <label for="Amount">Amount
+</label> <br>
+  <input type="text" name="Amount" id="Amount" placeholder="Amount">
+  <br><br>
+ <label for="Narr"> Narration
+</label><br>
+  <input type="text" name="Narr" id="Narr" placeholder="Narration">
+</div>
+<hr><br><br>
+<input type="submit" value="Pay-Now" id="pay">
+</fieldset>
+  </form>
+  
+
+  </body>
+ </html>
